@@ -1,6 +1,7 @@
 @import "./components/header";
 @import "./components/footer";
 @import "./components/product";
+@import "./components/cart";
 
 :root {
   --yellow: #f5a142;
