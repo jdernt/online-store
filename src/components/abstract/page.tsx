@@ -37,10 +37,12 @@ export class Page<PP = {}, SS = {}> extends React.Component<PP & P & IStore, SS 
   }
 
   render(children: any) {
+    const { cart: { products } } = this.props;
+
     return (
       <div className='page-wrapper'>
         {this.renderHead()}
-        <Header />
+        <Header cartProductsCount={products.length || 0} />
         {children}
         <Footer />
       </div>
