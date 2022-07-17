@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { withRouter } from 'next/router';
 import Page from '@components/abstract/page';
 import ProductCard, { ProductItem } from '@components/productCard';
@@ -10,6 +11,7 @@ interface Props {
 export class Index extends Page<Props> {
   render() {
     const { products } = this.props;
+
     return super.render(
       <main className='container'>
         <section className='products'>
@@ -35,4 +37,7 @@ export async function getStaticProps() {
   };
 }
 
-export default withRouter(Index);
+export default connect(
+  Page.mapStateToProps,
+  Page.mapDispatchToProps
+)(withRouter(Index));

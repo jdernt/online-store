@@ -1,4 +1,5 @@
 import React from "react";
+import { connect } from "react-redux";
 import { withRouter } from "next/router";
 import Page from "@components/abstract/page";
 
@@ -12,4 +13,7 @@ class Cart extends Page {
   }
 }
 
-export default withRouter(Cart);
+export default connect(
+  Page.mapStateToProps,
+  Page.mapDispatchToProps
+)(withRouter(Cart));
