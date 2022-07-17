@@ -6,13 +6,8 @@ import { IStore } from '@redux/store';
 import { addToCart, removeFromCart, emptyCart } from '@redux/actions/cartActions';
 import Header from '@components/pages/header';
 import Footer from '@components/pages/footer';
-import { ProductItem } from '@components/productCard';
 
-interface P extends WithRouterProps {
-  addToCart: (item: ProductItem) => void
-  removeFromCart: (item: ProductItem) => void
-  emptyCart: () => void
-}
+interface P extends WithRouterProps {}
 
 interface S {}
 

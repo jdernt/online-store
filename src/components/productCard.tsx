@@ -13,7 +13,6 @@ export interface ProductItem {
 
 interface Props extends IStore {
   data: ProductItem
-  addToCart: (item: ProductItem) => void;
 }
 
 function ProductCard(props: Props) {
