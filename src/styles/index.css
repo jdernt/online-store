@@ -1,5 +1,6 @@
 @import "./components/header";
 @import "./components/footer";
+@import "./components/product";
 
 :root {
   --yellow: #f5a142;
@@ -74,4 +75,10 @@ a {
 
 .button-outline:hover {
   background-color: var(--yellow);
+}
+
+.products__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }

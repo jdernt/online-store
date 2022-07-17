@@ -1,0 +1,35 @@
+.product, .product__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.product {
+  max-width: 24%;
+  margin: 5px 0;
+  padding: 10px 20px;
+  border: 3px solid var(--yellow);
+  border-radius: 10px;
+}
+
+.product__image {
+  height: 100%;
+  max-height: 240px;
+  margin-bottom: 30px;
+  object-fit: contain;
+}
+
+.product__info {
+  margin-top: auto;
+}
+
+.product__info-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.product__price {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.product__name {
+}

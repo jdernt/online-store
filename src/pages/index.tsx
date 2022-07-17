@@ -1,14 +1,10 @@
 import React from 'react';
 import { withRouter } from 'next/router';
 import Page from '@components/abstract/page';
+import ProductCard, { ProductItem } from '@components/productCard';
 
 interface Props {
-  products: {
-    id: number,
-    image: string,
-    name: string,
-    price: number
-  }[]
+  products: ProductItem[]
 }
 
 export class Index extends Page<Props> {
@@ -16,10 +12,12 @@ export class Index extends Page<Props> {
     const { products } = this.props;
     return super.render(
       <main className='container'>
-        <section>
-          {products.map((item, key) => (
-            <></>
-          ))}
+        <section className='products'>
+          <div className='products__list'>
+            {products.map((item, index) => (
+              <ProductCard key={index} data={item} />
+            ))}
+          </div>
         </section>
       </main>
     );
