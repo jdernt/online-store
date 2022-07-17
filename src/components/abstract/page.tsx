@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '@components/pages/header';
+import Footer from '@components/pages/footer';
 import Head from 'next/head';
 import { WithRouterProps } from 'next/dist/client/with-router';
 
@@ -24,6 +25,7 @@ export class Page<PP = {}, SS = {}> extends React.Component<PP & P, SS & S> {
         {this.renderHead()}
         <Header />
         {children}
+        <Footer />
       </div>
     );
   }
