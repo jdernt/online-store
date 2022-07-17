@@ -2,10 +2,9 @@
   "extends": "next/core-web-vitals",
   "rules": {
     "template-curly-spacing": "off",
-    "indent": ["error", 4, {
+    "indent": ["error", 2, {
       "ignoredNodes": ["TemplateLiteral"]
     }],
-    "semi": ["error", "always"],
-    "quote-props": ["error", "always"]
+    "semi": ["error", "always"]
   }
 }
