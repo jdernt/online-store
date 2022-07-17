@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from '@components/pages/header';
 import Head from 'next/head';
 import { WithRouterProps } from 'next/dist/client/with-router';
 
@@ -20,6 +21,8 @@ export class Page<PP = {}, SS = {}> extends React.Component<PP & P, SS & S> {
   render(children: any) {
     return (
       <div className='page-wrapper'>
+        {this.renderHead()}
+        <Header />
         {children}
       </div>
     );
