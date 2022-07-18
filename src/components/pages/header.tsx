@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React, { Component } from 'react';
-import * as menu from '@configs/menu.json';
+import Menu from '@configs/menu.json';
 
 interface Props {
   cartProductsCount: number;
@@ -18,7 +18,7 @@ export class Header extends Component<Props> {
           </Link>
           <nav className='header__nav'>
             <ul className='list header__menu'>
-              {menu.map((item: { title: string, href: string }, index: number) => (
+              {Menu.map((item: { title: string, href: string }, index: number) => (
                 <li key={index} className='header__menu-item'>
                   <Link href={item.href}>
                     <a className='button button-fill'>{item.title}</a>
