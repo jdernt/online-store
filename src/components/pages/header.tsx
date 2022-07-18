@@ -11,27 +11,29 @@ export class Header extends Component<Props> {
     const { cartProductsCount } = this.props;
 
     return (
-      <header className='container flex header'>
-        <Link href='/'>
-          <h1 className='header__title'>Online Store</h1>
-        </Link>
-        <nav className='header__nav'>
-          <ul className='list header__menu'>
-            {menu.map((item: { title: string, href: string }, index: number) => (
-              <li key={index} className='header__menu-item'>
-                <Link href={item.href}>
-                  <a className='button button-fill'>{item.title}</a>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
-        <div className='header__cart' data-count={cartProductsCount}>
-          <Link href='/cart'>
-            <a className='button button-outline'>
-              Корзина
-            </a>
+      <header className='header'>
+        <div className='container flex'>
+          <Link href='/'>
+            <h1 className='header__title'>Online Store</h1>
           </Link>
+          <nav className='header__nav'>
+            <ul className='list header__menu'>
+              {menu.map((item: { title: string, href: string }, index: number) => (
+                <li key={index} className='header__menu-item'>
+                  <Link href={item.href}>
+                    <a className='button button-fill'>{item.title}</a>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <div className='header__cart' data-count={cartProductsCount}>
+            <Link href='/cart'>
+              <a className='button button-outline'>
+                Корзина
+              </a>
+            </Link>
+          </div>
         </div>
       </header>
     );

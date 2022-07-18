@@ -1,4 +1,5 @@
 .header {
+  margin-bottom: 4rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
   background-color: var(--greenLight);
@@ -53,7 +54,7 @@
 }
 
 @media (max-width: 480px) {
-  .header {
+  .header .flex {
     flex-wrap: wrap;
   }
 

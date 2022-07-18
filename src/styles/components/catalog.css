@@ -1,3 +1,7 @@
+.catalog {
+  margin-bottom: 4rem;
+}
+
 .catalog__list {
   display: flex;
   flex-wrap: wrap;

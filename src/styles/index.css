@@ -58,10 +58,6 @@ a {
   padding-right: 1rem;
 }
 
-.container:not(.footer) {
-  margin-bottom: 4rem;
-}
-
 .list {
   list-style-type: none;
 }

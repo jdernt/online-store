@@ -1,3 +1,7 @@
+.cart {
+  margin-bottom: 4rem;
+}
+
 .cart__total {
   margin-top: 3rem;
   text-align: right;
