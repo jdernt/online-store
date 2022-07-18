@@ -31,7 +31,7 @@ function ProductCard({ data, cart, isCart, addToCart, removeFromCart }: Props) {
       <div className='product'>
         <img src={data.image} className='product__image' />
         <span className='product__name'>{data.name}</span>
-        <span className='product__price'>{price}</span>
+        <span className='product__price'>{price} &#8381;</span>
         <div className='product__actions'>
           <button
             className='button button-outline'
@@ -48,7 +48,7 @@ function ProductCard({ data, cart, isCart, addToCart, removeFromCart }: Props) {
     <div className='product'>
       <img className="product__image" src={data.image} />
       <div className='product__info'>
-        <span className='product__price product__info-item'>{price}</span>
+        <span className='product__price product__info-item'>{price} &#8381;</span>
         <span className='product__name product__info-item'>{data.name}</span>
         <button
           className={`button ${isAddedToCart ? 'button-outline' : 'button-fill'} product__info-item`}
