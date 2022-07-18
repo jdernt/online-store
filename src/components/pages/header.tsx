@@ -12,7 +12,9 @@ export class Header extends Component<Props> {
 
     return (
       <header className='container flex header'>
-        <h1 className='header__title'>Online Store</h1>
+        <Link href='/'>
+          <h1 className='header__title'>Online Store</h1>
+        </Link>
         <nav className='header__nav'>
           <ul className='list header__menu'>
             {menu.map((item: { title: string, href: string }, index: number) => (

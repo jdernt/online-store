@@ -52,7 +52,7 @@ a {
 }
 
 .container:not(.footer) {
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 
 .list {
@@ -87,4 +87,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+.title {
+  margin-bottom: 1rem;
 }
