@@ -1,9 +1,11 @@
-.catalog__title {
-  margin-bottom: 1rem;
-}
-
 .catalog__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+@media (max-width: 960px) {
+  .catalog__list {
+    justify-content: space-evenly;
+  }
 }

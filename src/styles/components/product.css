@@ -43,3 +43,14 @@
   display: flex;
   justify-content: flex-end;
 }
+
+@media (max-width: 640px) {
+  .product {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .product__actions .button {
+    width: 100%;
+  }
+}

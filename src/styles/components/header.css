@@ -50,5 +50,19 @@
 .header .button-outline:hover {
   color: var(--textDark);
   background-color: var(--grey);
+}
 
+@media (max-width: 480px) {
+  .header {
+    flex-wrap: wrap;
+  }
+
+  .header__title {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .header__menu {
+    margin-left: 0;
+  }
 }
