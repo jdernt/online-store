@@ -11,15 +11,24 @@ class Cart extends Page {
     return super.render(
       <main className='container'>
         <section className='cart'>
-          <div className='cart__list'>
-            {cart.products.map((product, index) => (
-              <ProductCard key={index} data={product} isCart />
-            ))}
-          </div>
-          <div className='cart__total'>
-            <span>Итого</span>
-            <span className='cart__total-price'>{formatPrice(cart.total)}</span>
-          </div>
+          <h1 className='title cart__title'>Корзина</h1>
+          {cart.products.length ? (
+            <>
+              <div className='cart__list'>
+                {cart.products.map((product, index) => (
+                  <ProductCard key={index} data={product} isCart />
+                ))}
+              </div>
+              <div className='cart__total'>
+                <span>Итого:</span>
+                <span className='cart__total-price'>{formatPrice(cart.total)} &#8381;</span>
+              </div>
+            </>
+          ) : (
+            <div className='cart__empty'>
+              Корзина пуста
+            </div>
+          )}
         </section>
       </main>
     );
