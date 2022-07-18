@@ -20,11 +20,21 @@
   flex-wrap: wrap;
 }
 
+.cart .product__image {
+  width: 240px;
+}
+
 .cart__empty {
   margin-top: 4rem;
   text-align: center;
   font-size: 1.5em;
   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .cart .product__image {
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
