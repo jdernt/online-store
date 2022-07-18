@@ -15,6 +15,7 @@ export class Index extends Page<Props> {
     return super.render(
       <main className='container'>
         <section className='catalog'>
+          <h1 className='catalog__title'>Список товаров</h1>
           <div className='catalog__list'>
             {products.map((item, index) => (
               <ProductCard key={index} data={item} />

@@ -47,8 +47,12 @@ a {
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.container:not(.footer) {
+  margin-bottom: 5rem;
 }
 
 .list {
@@ -57,7 +61,7 @@ a {
 
 .button {
   display: inline-block;
-  padding: 10px 15px;
+  padding: 0.7rem 1rem;
   border: 2px solid var(--yellow);
   border-radius: 5px;
   cursor: pointer;

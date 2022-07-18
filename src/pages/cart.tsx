@@ -9,7 +9,7 @@ class Cart extends Page {
   render() {
     const { cart } = this.props;
     return super.render(
-      <main>
+      <main className='container'>
         <section className='cart'>
           <div className='cart__list'>
             {cart.products.map((product, index) => (

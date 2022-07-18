@@ -1,6 +1,6 @@
 .footer {
   margin-top: auto;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   border-top: 2px solid var(--yellow);
 }
