@@ -2,5 +2,6 @@
   margin-top: auto;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  border-top: 2px solid var(--yellow);
+  color: #fff;
+  background-color: var(--black);
 }

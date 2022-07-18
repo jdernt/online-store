@@ -26,10 +26,10 @@ export class Header extends Component<Props> {
             ))}
           </ul>
         </nav>
-        <div className='header__cart'>
+        <div className='header__cart' data-count={cartProductsCount}>
           <Link href='/cart'>
             <a className='button button-outline'>
-              Корзина{' ' + cartProductsCount}
+              Корзина
             </a>
           </Link>
         </div>

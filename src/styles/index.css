@@ -5,14 +5,21 @@
 @import "./components/cart";
 
 :root {
-  --yellow: #f5a142;
-  --yellow-light: rgb(243, 179, 106);
+  --yellow: #ffd14b;
+  --yellow-light: #fadc85;
+  --blue: #00569f;
+  --textDark: #232835;
+  --grey: #cecdcd;
+  --greenLight: #cee9e3;
+  --red: #ea514b;
+  --black: #0b0d17;
 }
 
 html,
 body {
   padding: 0;
   margin: 0;
+  color: var(--textDark);
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -62,32 +69,22 @@ a {
 .button {
   display: inline-block;
   padding: 0.7rem 1rem;
-  border: 2px solid var(--yellow);
+  font-weight: 500;
+  border: 2px solid var(--blue);
   border-radius: 5px;
   cursor: pointer;
 }
 
-.button-fill {
-  background-color: var(--yellow);
+.button-fill, .button-outline:hover {
+  color: #fff;
+  background-color: var(--blue);
 }
 
-.button-fill:hover {
+.button-outline, .button-fill:hover {
+  color: var(--blue);
   background-color: #fff;
 }
 
-.button-outline {
-  background-color: #fff;
-}
-
-.button-outline:hover {
-  background-color: var(--yellow);
-}
-
-.products__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
 .title {
   margin-bottom: 1rem;
 }
