@@ -4,7 +4,10 @@ const nextConfig = {
   swcMinify: true,
   images: {
     domains: ['appevent.ru'],
+    loader: 'akamai',
+    path: '',
   },
+  assetPrefix: './',
 }
 
 module.exports = nextConfig
