@@ -22,6 +22,12 @@ jobs:
       - name: Installing my packages
         run: npm ci
 
+      - name: 'Create env file'
+        run: |
+          touch .env.local
+          echo BASEURL=https://appevent.ru/dev/task1 >> .env.local
+          cat .env.local
+
       - name: Build my App
         run: npm run build && npm run export && touch ./out/.nojekyll
 
