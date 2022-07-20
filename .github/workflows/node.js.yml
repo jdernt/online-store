@@ -28,6 +28,13 @@ jobs:
           echo BASEURL=https://appevent.ru/dev/task1 >> .env.local
           cat .env.local
 
+      - name: Find and Replace
+        uses: jacobtomlinson/gha-find-replace@v2
+        with:
+          find: "basePath: ''"
+          replace: "basePath: '/online-store'"
+          include: "**next.config.js"
+
       - name: Build my App
         run: npm run build && npm run export && touch ./out/.nojekyll
 
