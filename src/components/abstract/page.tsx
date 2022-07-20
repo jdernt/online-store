@@ -36,6 +36,7 @@ export class Page<PP = {}, SS = {}> extends React.Component<PP & P & IStore, SS 
     );
   }
 
+  // @ts-ignore
   render(children: any) {
     const { cart: { products } } = this.props;
 

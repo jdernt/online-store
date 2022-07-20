@@ -41,7 +41,7 @@ function ProductCard({ data, cart, isCart, addToCart, removeFromCart }: Props) {
           </button>
         </div>
       </div>
-    )
+    );
   }
 
   return (

@@ -9,8 +9,8 @@ import '../styles/index.css';
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
     const state = loadState();
-    if (state && 'cart' in state) store.dispatch(setCart(state.cart))
-  }, [])
+    if (state && 'cart' in state) store.dispatch(setCart(state.cart));
+  }, []);
 
   return (
     <Provider store={store}>
